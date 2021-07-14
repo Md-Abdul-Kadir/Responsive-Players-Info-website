@@ -88,6 +88,72 @@ p{
     width: 100%;
 }
 
+
+/**********************
+video section style 
+********************/
+h3{
+    color: white;
+}
+
+.video-title{
+    color: black;
+    text-align: center;
+    padding: 5% 0%;
+
+}
+.video-title h1{
+    font-size: 55px;
+    color: crimson;
+    
+}
+.video-section{
+  width: 100%;
+
+}
+.videos{
+    display: flex;
+}
+.video{
+    width: 40%;
+    margin: 4%;
+    padding: 1%;
+    background-color: black;
+}
+.video iframe
+{
+    width: 100%;
+}
+
+/*********************
+gallery style ********
+**********************/
+h4{
+    font-size: 50px;
+    color: crimson;
+}
+.gallery-title{
+    text-align: center;
+    padding: 2% 0px;
+    
+}
+.gallery-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap:40px ;
+    grid-row-gap: 35px;
+   
+}
+.photo img{
+    width: 300px;
+    height: 420px;
+    box-shadow: 2px 2px 20px rgba(37, 36, 36, 0.15);
+}
+.photo img:hover
+{
+  scale: 1.5;
+}
+
 /***********************
   footer section style
   ********************/
@@ -109,12 +175,13 @@ p{
   }
 
 
-  /****************************
+
+
+
+
+/****************************
  media quary for Mobile screen 
  *****************************/
-
-
-
 
 @media only screen and (max-width:560px) {
 
@@ -150,7 +217,34 @@ p{
         grid-template-columns: 1fr;
        
     }
-   
+    
+    /*Video style */
+
+    .video-section{
+        width: 100%;
+      
+      }
+      .videos{
+          display: flex;
+          flex-direction: column;
+      }
+      .video{
+          width: 90%;
+          background-color: black;
+      }
+
+     /*gallery style*/
+
+     .gallery-photo{
+        display: grid;
+        grid-template-columns: 1fr ;
+       
+    }
+    .photo img{
+        width: 250px;
+        height: 320px;
+        box-shadow: 2px 2px 20px rgba(37, 36, 36, 0.15);
+    }
      /* footer info for mobile */
      footer{
         text-align: center;
@@ -200,8 +294,36 @@ p{
         grid-template-columns: 1fr 1fr;
        
     }
-   
+
+     /*****video style *****/
+
+    .video-section{
+        width: 100%;
+      
+      }
+      .videos{
+          display: flex;
+          flex-direction: column;
+      }
+      .video{
+          width: 90%;
+          background-color: black;
+      }
+
+     /*gallery style*/
+
+    .gallery-photo{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+    }
+    .photo img{
+        width: 250px;
+        height: 320px;
+        box-shadow: 2px 2px 20px rgba(37, 36, 36, 0.15);
+    }
+
      /* footer info for tab */
+
      footer{
         text-align: center;
        
