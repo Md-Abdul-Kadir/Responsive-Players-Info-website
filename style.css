@@ -54,7 +54,11 @@ h2{
 .button:hover
 {
     font-size: 1.5em;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+.fas fa-arrow-right{
+   margin-left: 10px;
+
 }
 /**********************
    player info style
@@ -104,3 +108,105 @@ p{
       background-color: rgb(221, 217, 217);
   }
 
+
+  /****************************
+ media quary for Mobile screen 
+ *****************************/
+
+
+
+
+@media only screen and (max-width:560px) {
+
+    /* top section for mobile sceeen */
+
+    h2{
+        font-size: 36px;
+    }
+    
+    .top-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-title{
+        width: 80%;
+        padding: 10% 10%;
+        
+    }
+    .flying-player{
+        width: 90%;
+        padding: 5%;
+         
+    }
+    .flying-player img{
+        width: 90%;
+     }
+
+
+     /* plkayers info style for mobile */
+
+    .players-info{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+   
+     /* footer info for mobile */
+     footer{
+        text-align: center;
+       
+    }
+    footer img{
+        width:170px;
+     }
+}
+
+ /****************************
+ media quary for Tab screen 
+ *****************************/
+
+
+
+ @media only screen and (min-width:560px) and (max-width:1024px) {
+    
+    /* top section for tab */
+    h2{
+        font-size: 36px;
+    }
+    
+    .top-details{
+        display: flex;
+        
+    }
+    .banner-title{
+        width: 30%;
+        padding: 5% 10%;
+        
+    }
+    .flying-player{
+        width: 40%;
+        padding: 5%;
+         
+    }
+    .flying-player img{
+        width: 90%;
+     }
+
+
+     /* plkayers info style for tab */
+
+    .players-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+   
+     /* footer info for tab */
+     footer{
+        text-align: center;
+       
+    }
+    footer img{
+        width:370px;
+     }
+}
